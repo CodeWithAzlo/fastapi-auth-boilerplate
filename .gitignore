@@ -1,0 +1,11 @@
+# Environment
+.env
+__pycache__/
+*.pyc
+venv/
+.env.*
+.DS_Store
+
+# IDE / Editor
+.vscode/
+.idea/
