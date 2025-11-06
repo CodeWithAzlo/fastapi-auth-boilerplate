@@ -24,44 +24,46 @@
 
 ## 🧱 Folder Structure
 
+```bash
 fastapi-auth-boilerplate/
 │
 ├── app/
-│ ├── core/
-│ │ ├── config.py # Environment and settings
-│ │ └── token.py # JWT token generation and verification
-│ │
-│ ├── db/
-│ │ ├── database.py # Database connection setup
-│ │ └── init_db.py # Database initialization (optional)
-│ │
-│ ├── models/
-│ │ └── models.py # SQLAlchemy models (e.g., User)
-│ │
-│ ├── routes/
-│ │ ├── auth.py # Authentication routes (login/register)
-│ │ └── user.py # CRUD routes for users
-│ │
-│ ├── schemas/
-│ │ └── schemas.py # Pydantic schemas for validation and serialization
-│ │
-│ ├── services/
-│ │ ├── auth_service.py # Authentication business logic
-│ │ └── user_service.py # User CRUD business logic
-│ │
-│ ├── utils/
-│ │ ├── hash.py # Password hashing utilities (bcrypt)
-│ │ └── init.py
-│ │
-│ ├── main.py # FastAPI application entry point
-│ └── init.py
+│   ├── core/
+│   │   ├── config.py              # Environment and settings
+│   │   └── token.py               # JWT token generation and verification
+│   │
+│   ├── db/
+│   │   ├── database.py            # Database connection setup
+│   │   └── init_db.py             # Database initialization (optional)
+│   │
+│   ├── models/
+│   │   └── models.py              # SQLAlchemy models (e.g., User)
+│   │
+│   ├── routes/
+│   │   ├── auth.py                # Authentication routes (login/register)
+│   │   └── user.py                # CRUD routes for users
+│   │
+│   ├── schemas/
+│   │   └── schemas.py             # Pydantic schemas for validation and serialization
+│   │
+│   ├── services/
+│   │   ├── auth_service.py        # Authentication business logic
+│   │   └── user_service.py        # User CRUD business logic
+│   │
+│   ├── utils/
+│   │   ├── hash.py                # Password hashing utilities (bcrypt)
+│   │   └── __init__.py
+│   │
+│   ├── main.py                    # FastAPI application entry point
+│   └── __init__.py
 │
-├── .env # Environment variables (local setup)
-├── .env.sample # Example env file for reference
-├── .gitignore # Git ignored files list
-├── README.md # Project documentation
-├── requirements.txt # Python dependencies
-└── venv/ # Virtual environment (optional)
+├── .env                           # Environment variables (local setup)
+├── .env.sample                    # Example env file for reference
+├── .gitignore                     # Git ignored files list
+├── README.md                      # Project documentation
+├── requirements.txt               # Python dependencies
+└── venv/                          # Virtual environment (optional)
+
 
 ## ⚙️ Environment Variables (`.env`)
 
@@ -163,6 +165,3 @@ This project is open-source and available under the MIT License.
 ---
 
 Would you like me to also generate the **actual FastAPI folder and file code** (with models, routes, JWT auth, CRUD, etc.) so you can directly run this project locally and then push it to GitHub?
-
-
-
